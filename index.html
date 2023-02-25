@@ -20,6 +20,20 @@
         <div class="single-bar"></div>
         <div class="single-bar"></div>
       </div>
+      <div class="navbar_mobile">
+        <div class="close-popup">
+          <img src="./assets/Icon.svg" alt="" />
+        </div>
+        <!-- nav Items for mobile -->
+        <ul>
+          <li><a href="#portfolio" id="nav-item-mobile">Portfolio</a></li>
+          <br />
+          <li><a href="#about" id="nav-item-mobile">About</a></li>
+          <br />
+          <li><a href="#contact" id="nav-item-mobile">Contact</a></li>
+          <br />
+        </ul>
+      </div>
     </header>
 
     <!-- hero -->
@@ -159,8 +173,7 @@
       <!-- single portfolio -->
       <div class="portfolio_single">
         <img src="./assets/portfolio/Snapshoot Portfolio (3).svg" alt="" />
-        <h1>Multi-Post
-          Stories</h1>
+        <h1>Multi-Post Stories</h1>
         <div class="flex items-center">
           <h5>CANOPY</h5>
           <div class="dot"></div>
@@ -189,5 +202,131 @@
         <button class="project_see_btn">See Project</button>
       </div>
     </section>
+
+    <!-- about section -->
+    <section id="about">
+      <div class="about_heading">
+        <h1>About</h1>
+        <h1>Myself</h1>
+        <br />
+        <p>
+          Hello I’m a software developer! I can help you build a product ,
+          feature or website Look through some of my work and experience! If you
+          like what you see and have a project you need coded, don’t hestiate to
+          contact me.
+        </p>
+        <br />
+        <a href="#"> LET’S CONNECT </a>
+        <br />
+        <div class="social-links-hero flex w-full">
+          <a href="#">
+            <img src="./assets/Vector (3).svg" alt="" />
+          </a>
+          <a href="#">
+            <img src="./assets/Linkedin icon.svg" alt="" />
+          </a>
+          <a href="#">
+            <img src="./assets/Vector (4).svg" alt="" />
+          </a>
+          <a href="#">
+            <img src="./assets/Vector (1).svg" alt="" />
+          </a>
+          <a href="#">
+            <img src="./assets/Vector (2).svg" alt="" />
+          </a>
+        </div>
+        <button class="resume-btn">Get my resume</button>
+        <br />
+        <br />
+        <br />
+        <div class="language_wrapper w-full flex items-center justify-between">
+          <h3>Languages</h3>
+          <img src="./assets/Union.svg" alt="" />
+        </div>
+
+        <!-- programming languages lists -->
+        <div class="single_programming_language_wrapper">
+          <img src="./assets/Ellipse 1.svg" alt="" />
+          <h6>Javascript</h6>
+        </div>
+
+        <div class="single_programming_language_wrapper">
+          <img src="./assets/Ellipse 1 copy.svg" alt="" />
+          <h6>HTML</h6>
+        </div>
+
+        <div class="single_programming_language_wrapper">
+          <img src="./assets/Ellipse 1 copy 2.svg" alt="" />
+          <h6>CSS</h6>
+        </div>
+        <br />
+        <div
+          class="framework_wrapper w-full flex items-center justify-between border-botoom"
+        >
+          <h3>Frameworks</h3>
+          <img src="./assets/Union copy.svg" alt="" />
+        </div>
+
+        <div
+          class="skills_wrapper w-full flex items-center justify-between border-botoom"
+        >
+          <h3>Skills</h3>
+          <img src="./assets/Union copy.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact">
+      <div class="contact_heading">
+        <h1>Contact me</h1>
+        <br />
+        <p>
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it
+        </p>
+      </div>
+      <form aria-required="true">
+        <input required type="text" placeholder="Yeremias" />
+        <input required type="email" placeholder="natajayanj14@gmail.com" />
+        <textarea
+          cols="30"
+          rows="10"
+          placeholder="Write your message here"
+          required
+        ></textarea>
+        <input class="submit_form" type="submit" value="Get in touch" />
+        <br />
+        <br />
+      </form>
+    </section>
+
+    <script>
+      // Get the nav element
+      const nav = document.querySelector(".navbar_mobile");
+
+      // Get the button element
+      const button = document.querySelector(".navbar");
+      const close_button = document.querySelector(".close-popup");
+      const nav_item = document.querySelectorAll("#nav-item-mobile");
+
+      // Add a click event listener to the button
+      button.addEventListener("click", () => {
+        // add the "active" class on the nav element
+        nav.classList.add("active");
+      });
+
+      close_button.addEventListener("click", () => {
+        nav.classList.remove("active");
+      });
+
+      nav_item.forEach((link) => {
+        link.addEventListener("click", () => {
+          nav.classList.remove("active");
+        });
+      });
+
+    </script>
   </body>
 </html>
