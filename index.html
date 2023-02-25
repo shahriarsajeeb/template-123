@@ -39,8 +39,9 @@
     <!-- hero -->
     <section class="hero-bg">
       <div class="intro-info">
-        <h1>I'm Mariane <br>
-          Glad to see <br>
+        <h1>
+          I'm Mariane <br />
+          Glad to see <br />
           you!
         </h1>
         <p>
@@ -53,30 +54,31 @@
         <!-- social links -->
         <ul class="social-links-hero flex w-full">
           <li>
-             <a href="#">
-              <img src="./assets/Linkedin icon.svg" alt="">
-             </a>
-            </li>
-            <li>
-             <a href="#">
-              <img src="./assets/Vector (1).svg" alt="">
-             </a></li>
-             <li>
-             <a href="#">
-              <img src="./assets/Vector (2).svg" alt="">
-             </a>
-            </li>
-            <li>
-             <a href="#">
-              <img src="./assets/Vector (3).svg" alt="">
-             </a>
-            </li>
-            <li>
-             <a href="#">
-              <img src="./assets/Vector (4).svg" alt="">
-             </a>
-            </li>
-            </ul>
+            <a href="#">
+              <img src="./assets/Linkedin icon.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/Vector (1).svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/Vector (2).svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/Vector (3).svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/Vector (4).svg" alt="" />
+            </a>
+          </li>
+        </ul>
         <br />
         <br />
       </div>
@@ -211,6 +213,56 @@
         <br />
         <button class="project_see_btn">See Project</button>
       </div>
+
+      <!-- portfolio popup -->
+      <div class="project_popup">
+        <div class="project_details_Wrapper">
+             <div class="project-popup-close">
+              <img src="./assets/cross.svg" alt="">
+             </div>
+          <div class="portfolio_single" style="border: none">
+            <h1>Tonic</h1>
+            <div class="flex items-center">
+              <h5>CANOPY</h5>
+              <div class="dot"></div>
+              <h6>Back End Dev</h6>
+              <div class="dot"></div>
+              <h6>2015</h6>
+            </div>
+            <br />
+            <img src="./assets/portfolio/Snapshoot Portfolio.svg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus eveniet dolore eligendi quam aperiam tempore nam
+              accusantium similique qui modi voluptate cum tenetur saepe,
+              adipisci earum ea assumenda quas labore!
+            </p>
+            <br />
+            <div class="skill_btn_wrapper flex items-center">
+              <div class="skill_btn">
+                <span>html</span>
+              </div>
+              <div class="skill_btn">
+                <span>css</span>
+              </div>
+              <div class="skill_btn">
+                <span>javascript</span>
+              </div>
+            </div>
+            <br />
+            <div class="w-full flex items-center justify-between">
+              <button class="project_see_btn">
+                See Project
+                <img src="./assets/Icon.png" alt="" style="margin-left: 5px" />
+              </button>
+              <button class="project_see_btn">
+                See Source
+                <img src="./assets/github.svg" alt="" style="margin-left: 5px" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- about section -->
@@ -230,30 +282,31 @@
         <br />
         <ul class="social-links-hero flex w-full">
           <li>
-             <a href="#">
-              <img src="./assets/Linkedin icon.svg" alt="">
-             </a>
-            </li>
-            <li>
-             <a href="#">
-              <img src="./assets/Vector (1).svg" alt="">
-             </a></li>
-             <li>
-             <a href="#">
-              <img src="./assets/Vector (2).svg" alt="">
-             </a>
-            </li>
-            <li>
-             <a href="#">
-              <img src="./assets/Vector (3).svg" alt="">
-             </a>
-            </li>
-            <li>
-             <a href="#">
-              <img src="./assets/Vector (4).svg" alt="">
-             </a>
-            </li>
-            </ul>
+            <a href="#">
+              <img src="./assets/Linkedin icon.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/Vector (1).svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/Vector (2).svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/Vector (3).svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/Vector (4).svg" alt="" />
+            </a>
+          </li>
+        </ul>
         <button class="resume-btn">Get my resume</button>
         <br />
         <br />
@@ -329,6 +382,7 @@
       const button = document.querySelector(".navbar");
       const close_button = document.querySelector(".close-popup");
       const nav_item = document.querySelectorAll("#nav-item-mobile");
+      const project_popup_close = document.querySelector(".project-popup-close");
 
       // Add a click event listener to the button
       button.addEventListener("click", () => {
@@ -346,6 +400,17 @@
         });
       });
 
+      // project see popup
+      const project_see_button = document.querySelector(".project_see_btn");
+      const project_popup = document.querySelector(".project_popup");
+
+      project_see_button.addEventListener("click", () => {
+        project_popup.classList.add("active");
+      });
+       
+      project_popup_close.addEventListener('click', () => {
+        project_popup.classList.remove("active");
+      })
     </script>
   </body>
 </html>
