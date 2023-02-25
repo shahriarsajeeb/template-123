@@ -97,7 +97,7 @@ header {
   border-bottom-left-radius: 80px;
   background-color: #fff;
 }
-.intro-info > h3 {
+.intro-info > h1 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -115,7 +115,7 @@ header {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.intro-info > a {
+.intro-info > h5 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -124,9 +124,23 @@ header {
   color: #7f8cff;
 }
 .social-links-hero > a > img {
-  margin-right: 15px;
+  margin-right: 10px;
   margin-top: 15px;
   margin-bottom: 10px;
+}
+
+ul li {
+  list-style: none;
+}
+
+.social-links-hero {
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social-links-hero > li {
+  list-style-type: none;
 }
 
 /* portfolio */
