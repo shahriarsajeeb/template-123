@@ -217,9 +217,9 @@
       <!-- portfolio popup -->
       <div class="project_popup">
         <div class="project_details_Wrapper">
-             <div class="project-popup-close">
-              <img src="./assets/cross.svg" alt="">
-             </div>
+          <div class="project-popup-close">
+            <img src="./assets/cross.svg" alt="" />
+          </div>
           <div class="portfolio_single" style="border: none">
             <h1>Tonic</h1>
             <div class="flex items-center">
@@ -257,7 +257,11 @@
               </button>
               <button class="project_see_btn">
                 See Source
-                <img src="./assets/github.svg" alt="" style="margin-left: 5px" />
+                <img
+                  src="./assets/github.svg"
+                  alt=""
+                  style="margin-left: 5px"
+                />
               </button>
             </div>
           </div>
@@ -382,7 +386,9 @@
       const button = document.querySelector(".navbar");
       const close_button = document.querySelector(".close-popup");
       const nav_item = document.querySelectorAll("#nav-item-mobile");
-      const project_popup_close = document.querySelector(".project-popup-close");
+      const project_popup_close = document.querySelector(
+        ".project-popup-close"
+      );
 
       // Add a click event listener to the button
       button.addEventListener("click", () => {
@@ -401,16 +407,18 @@
       });
 
       // project see popup
-      const project_see_button = document.querySelector(".project_see_btn");
+      const project_see_button = document.querySelectorAll(".project_see_btn");
       const project_popup = document.querySelector(".project_popup");
 
-      project_see_button.addEventListener("click", () => {
-        project_popup.classList.add("active");
+      project_see_button.forEach((item) => {
+        item.addEventListener("click", () => {
+          project_popup.classList.add("active");
+        });
       });
-       
-      project_popup_close.addEventListener('click', () => {
+
+      project_popup_close.addEventListener("click", () => {
         project_popup.classList.remove("active");
-      })
+      });
     </script>
   </body>
 </html>
