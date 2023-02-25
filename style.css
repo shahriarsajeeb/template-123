@@ -95,3 +95,102 @@ header {
   margin-top: 15px;
   margin-bottom: 10px;
 }
+
+/* portfolio */
+#portfolio {
+  margin: 50px 0px;
+  padding: 0px 24px;
+}
+.portfolio_single {
+  background: #ffffff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+}
+.portfolio_single > img {
+  width: 100%;
+}
+.portfolio_single > h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  padding-top: 12px;
+}
+.portfolio_single > .flex > h5 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+.portfolio_single > .flex > h6 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #c1c7d0;
+  border: none;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.portfolio_single > p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+.skill_btn {
+  background: #ebebff;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  padding: 5px 10px;
+}
+.skill_btn > span {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+}
+.project_see_btn {
+  width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #396df2;
+  background: transparent;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  margin-top: 5px;
+}
